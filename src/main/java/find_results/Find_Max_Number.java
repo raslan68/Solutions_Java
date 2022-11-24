@@ -1,5 +1,6 @@
 package find_results;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Find_Max_Number {
@@ -12,5 +13,8 @@ public class Find_Max_Number {
             }
         }
         return "Max number is: " + max;
+
     }
 }
+        //OR
+        // return  Collections.max(nums).toString();

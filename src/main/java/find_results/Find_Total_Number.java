@@ -13,3 +13,7 @@ public class Find_Total_Number {
     }
 
 }
+        //OR
+        // return nums.stream()
+//                .mapToInt(Integer::intValue)
+//                .sum();
