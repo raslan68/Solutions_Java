@@ -4,10 +4,11 @@ import calculator.Calculator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> numbers = new ArrayList<Integer>();
+    /*    List<Integer> numbers = new ArrayList<Integer>();
         numbers.add(5);
         numbers.add(2);
         numbers.add(3);
@@ -21,6 +22,7 @@ public class Main {
 
         Calculator calculator = new Calculator(5, 4);
         System.out.println(calculator.addition());
+
         List<String> elements = new ArrayList<>();
         elements.add("Java");
         elements.add("Python");
@@ -28,8 +30,7 @@ public class Main {
         elements.add("C");
         elements.add("C");
         Find_Dublicate_Elements element = new Find_Dublicate_Elements(elements);
-        element.dublicte();
-
+        element.dublicte();*/
     }
 
 }
