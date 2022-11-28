@@ -31,6 +31,7 @@ public class Main {
         elements.add("C");
         Find_Dublicate_Elements element = new Find_Dublicate_Elements(elements);
         element.dublicte();*/
-    }
 
+
+    }
 }
