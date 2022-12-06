@@ -1,6 +1,6 @@
 package find_results;
 
-public class Find_SumofDigits_inNumbers {
+public class Find_SumofDigits_inNumber {
 
     public static void main(String[] args) {
         int num = 12345;
