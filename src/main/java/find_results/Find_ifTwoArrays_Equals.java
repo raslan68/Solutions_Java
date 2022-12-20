@@ -4,7 +4,7 @@ public class Find_ifTwoArrays_Equals {
 
     public static void main(String[] args) {
         int[] a1 = {1, 2, 3, 4, 5, 6};
-        int[] a2 = {1, 2, 3, 4, 5};
+        int[] a2 = {1, 2, 3, 4, 5, 6};
 
         boolean flag = true;
 
