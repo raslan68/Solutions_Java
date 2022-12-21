@@ -1,18 +1,13 @@
 package find_results;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class Find_Dublicate_Elements {
 
-    List<String> elements;
-
-    public Find_Dublicate_Elements(List<String> elements) {
-        this.elements = elements;
-    }
-
-    public void dublicte(){
+    public void dublicateElement(List<String> elements){
         Set<String> list = new HashSet<>();
         boolean flag = false;
         for (String el : elements){
@@ -24,6 +19,21 @@ public class Find_Dublicate_Elements {
         if (flag==false) {
             System.out.println("not found");
         }
+    }
+
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C");
+        list.add("Java Script");
+        list.add("Java");
+
+        Find_Dublicate_Elements dub = new Find_Dublicate_Elements();
+        dub.dublicateElement(list);
+
+
+
     }
 
 }
