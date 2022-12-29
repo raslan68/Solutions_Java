@@ -1,11 +1,12 @@
 package calculator;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Sort_Elements_In_Arrays {
 
     public static void main(String[] args) {
-        int[] array = {3, 2, 5, 4, 1};
+        Integer[] array = {3, 2, 5, 4, 1};
         System.out.println("Before sorting: " + Arrays.toString(array));
 
         for (int i =0; i<array.length-1; i++) {
@@ -21,6 +22,8 @@ public class Sort_Elements_In_Arrays {
             }
         }
         System.out.println("After sorting : " + Arrays.toString(array));
-
     }
 }
+        //OR
+        // Arrays.sort(array);
+        // Arrays.parallelSort(array);
