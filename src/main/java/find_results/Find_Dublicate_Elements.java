@@ -11,12 +11,12 @@ public class Find_Dublicate_Elements {
         Set<String> list = new HashSet<>();
         boolean flag = false;
         for (String el : elements){
-           if (list.add(el)== false) {
+           if (!list.add(el)) {
                System.out.println(el);
                flag=true;
            }
         }
-        if (flag==false) {
+        if (flag == false) {
             System.out.println("not found");
         }
     }
@@ -25,9 +25,11 @@ public class Find_Dublicate_Elements {
         List<String> list = new ArrayList<>();
         list.add("Java");
         list.add("Python");
-        list.add("C");
+        list.add("C+");
         list.add("Java Script");
         list.add("Java");
+        list.add("PHP");
+        list.add("C+");
 
         Find_Dublicate_Elements dub = new Find_Dublicate_Elements();
         dub.dublicateElement(list);
