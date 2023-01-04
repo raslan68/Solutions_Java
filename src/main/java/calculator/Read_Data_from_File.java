@@ -13,5 +13,8 @@ public class Read_Data_from_File {
         while (scan.hasNextLine()){
             System.out.println(scan.nextLine());
         }
+        //OR instead of while loop
+        //scan.useDelimiter("\\Z");
+        //System.out.println(scan.next());
     }
 }
