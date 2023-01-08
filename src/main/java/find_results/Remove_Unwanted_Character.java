@@ -1,4 +1,4 @@
-package calculator;
+package find_results;
 
 public class Remove_Unwanted_Character {
 
