@@ -6,7 +6,7 @@ import java.util.Collections;
 public class Sort_Elements_In_Arrays {
 
     public static void main(String[] args) {
-        Integer[] array = {3, 2, 5, 4, 1};
+        Integer[] array = {4, 1, 5, 3, 2};
         System.out.println("Before sorting: " + Arrays.toString(array));
 
         for (int i =0; i<array.length-1; i++) {
