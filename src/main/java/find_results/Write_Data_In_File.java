@@ -12,7 +12,7 @@ public class Write_Data_In_File {
 
         bw.write("Hello from Java!\n");
         bw.write("This message is coming from Java to here!\n");
-        bw.write("Java is very good!");
+        bw.write("Everything is well");
 
         System.out.println("Done!!!!");
         bw.close();
