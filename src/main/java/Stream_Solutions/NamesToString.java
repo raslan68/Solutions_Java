@@ -1,6 +1,7 @@
 package Stream_Solutions;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class NamesToString {
 
@@ -17,9 +18,15 @@ public class NamesToString {
         return sb.toString();
     }
         // Stream Solution
-    public static String namesToString_Stream(List<Person> people){
-        return "Names" + people.stream().map(person -> person.getName()).reduce((i, sum) -> i + "," + sum)
+    public static String namesToString_Stream1(List<Person> people){
+        return "Names" + people.stream().map(Person::getName).reduce((i, sum) -> i + ", " + sum)
                 .orElse("")+ ".";
+    }
+
+    // OR other solution with stream
+    public static String namesToString_Stream2(List<Person> people){
+        return "Names" + people.stream().map(Person::getName)
+                .collect(Collectors.joining(", ")) + ".";
     }
 
 }
