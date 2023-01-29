@@ -18,16 +18,8 @@ public class NamesToString {
     }
         // Stream Solution
     public static String namesToString_Stream(List<Person> people){
-        String label = "Names";
-        StringBuilder sb = new StringBuilder(label);
-        for (Person person : people){
-            if (sb.length() > label.length()){
-                sb.append(", ");
-            }
-            sb.append(person.getName());
-        }
-        sb.append(".");
-        return sb.toString();
+        return "Names" + people.stream().map(person -> person.getName()).reduce((i, sum) -> i + "," + sum)
+                .orElse("")+ ".";
     }
 
 }
