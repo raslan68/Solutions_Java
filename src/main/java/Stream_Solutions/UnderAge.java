@@ -16,10 +16,10 @@ public class UnderAge {
         return kids;
     }
     // Stream Solution
-    public static Set<String> getKidsName_stream(List<Person> people){
+    public static Set<String> getKidsName_stream(List<Person> people) {
         return people.stream()
                 .filter(person -> person.getAge() < 18)
-                .map(person -> person.getName())
+                .map(Person::getName)
                 .collect(Collectors.toSet());
     }
 }
