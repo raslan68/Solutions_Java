@@ -21,7 +21,7 @@ public class GroupByNationalit {
         // Stream Solution!!!!!!!
         public static Map<String, List<Person>> groupByNationality_Stream (List < Person > people) {
             return people.stream()
-                    .collect(Collectors.groupingBy(person -> person.getNationality(), Collectors.toList()));
+                    .collect(Collectors.groupingBy(Person::getNationality, Collectors.toList()));
         }
 
 
