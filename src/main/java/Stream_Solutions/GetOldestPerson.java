@@ -8,7 +8,7 @@ public class GetOldestPerson {
     public static Person getOldestPerson(List<Person> people){
         Person oldestPerson = new Person("", 0);
         for(Person person : people){
-            if (person.getAge() < oldestPerson.getAge()){
+            if (person.getAge() > oldestPerson.getAge()){
                 oldestPerson = person;
             }
         }
