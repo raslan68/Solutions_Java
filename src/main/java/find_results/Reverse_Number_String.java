@@ -9,10 +9,10 @@ public class Reverse_Number_String {
 
         while (num != 0){
             lastDigit = num % 10;
-            reverse = reverse * 10 + lastDigit;
+            System.out.print(lastDigit);
             num = num / 10;
         }
-        System.out.println(reverse);
+        System.out.println();
 
         // OR
        /* StringBuffer sb = new StringBuffer(String.valueOf(num));
