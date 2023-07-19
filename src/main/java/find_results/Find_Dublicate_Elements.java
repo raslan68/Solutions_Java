@@ -34,11 +34,14 @@ public class Find_Dublicate_Elements {
         Find_Dublicate_Elements dub = new Find_Dublicate_Elements();
         dub.dublicateElement(list);
 
-
-
     }
 
 }
+
+            // With Stream
+    /* Set<String> list = elements.stream().filter(s -> !set.add(s)).collect(Collectors.toSet());
+        System.out.println(list);*/
+
         //OR
     /* boolean flag = false;
         for (int i=0; i<elements.size(); i++){
