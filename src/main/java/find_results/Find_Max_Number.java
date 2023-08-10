@@ -24,7 +24,9 @@ public class Find_Max_Number {
         list.add(10);
         list.add(2);
         System.out.println(find_Max_Number(list));
+
     }
+
 }
         //OR
-        // return  Collections.max(nums).toString();
+        //Collections.max(list).toString();
